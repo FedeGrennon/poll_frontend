@@ -1,0 +1,64 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.7rem;
+	width: 100%;
+	padding: 0.1rem;
+}
+
+.wrapper input {
+	width: 100%;
+	margin: 0;
+	border: none;
+	background-color: var(--blue-dark);
+	padding: 0.5rem 0.7rem;
+	font-size: 1rem;
+	font-family: monospace;
+	color: var(--yellow-light);
+	border-radius: 0.5rem;
+}
+
+.wrapper input::placeholder {
+	color: var(--gray-3);
+}
+
+.wrapper input:focus {
+	outline: none;
+}
+
+.filter-applied-wrapper {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.filter-applied-wrapper .filter-applied {
+	text-decoration: none;
+	padding: 0.4rem 0.4rem 0.4rem 0.7rem;
+	border-radius: 0.3rem;
+	background-color: var(--blue-dark);
+	border: 1px solid var(--blue-dark);
+	color: var(--yellow-light);
+	font-size: 0.9rem;
+	user-select: none;
+	display: flex;
+	gap: 0.7rem;
+	align-items: center;
+	cursor: pointer;
+}
+
+.filter-applied .close {
+	color: var(--gray-2);
+	align-self: center;
+	font-size: 1.2rem;
+}
+
+.filter-applied-wrapper .filter-applied:hover {
+	border-color: var(--red);
+}
+
+.filter-applied-wrapper .filter-applied:hover > .close {
+	color: var(--red);
+}

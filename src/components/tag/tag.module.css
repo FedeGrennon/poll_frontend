@@ -1,0 +1,14 @@
+.tag {
+	text-decoration: none;
+	padding: 0.3rem 0.6rem;
+	border: 1px solid var(--blue-dark);
+	background-color: var(--blue-dark);
+	border-radius: 0.3rem;
+	color: var(--gray-light);
+	font-size: 0.9rem;
+	user-select: none;
+}
+
+.tag:hover {
+	border-color: var(--yellow);
+}
